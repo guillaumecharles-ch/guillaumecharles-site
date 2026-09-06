@@ -108,8 +108,11 @@
   .btn-ghost:hover{border-color:var(--accent-bright);color:var(--accent-bright);transform:translateY(-2px)}
 
   /* ---------- stats ---------- */
-  .stats{background:var(--sand);border-bottom:1px solid var(--rule);padding:2.75rem 0}
   .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+  .bg-stats{
+    background:var(--sand);border:1px solid var(--rule);border-radius:10px;
+    padding:1.75rem 1.5rem;margin:1.75rem 0 2.25rem;
+  }
   .stat .num{
     font-family:'Playfair Display',Georgia,serif;font-size:2.1rem;font-weight:600;
     color:var(--blue);line-height:1;margin-bottom:.4rem;
@@ -241,29 +244,6 @@
   </div>
 </div>
 
-<div class="stats">
-  <div class="wrap-wide">
-    <div class="stats-grid">
-      <div class="stat rv">
-        <div class="num">9</div>
-        <div class="label">years at Nexthink, PM to Senior Director</div>
-      </div>
-      <div class="stat rv">
-        <div class="num">10M<sup>+</sup></div>
-        <div class="label">endpoints running products I launched</div>
-      </div>
-      <div class="stat rv">
-        <div class="num">3<sup>×</sup></div>
-        <div class="label">consecutive years a Gartner MQ Leader</div>
-      </div>
-      <div class="stat rv">
-        <div class="num">1<sup>st</sup></div>
-        <div class="label">SaaS product and first acquisition, both led</div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <section id="problem">
   <div class="wrap rv">
     <div class="eyebrow">The problem</div>
@@ -344,9 +324,29 @@
     <div class="eyebrow">Background</div>
     <h2>Nine years building the platform you're running.</h2>
     <p>I joined Nexthink as a product manager and left as Senior Director of Product Management, through the years it went from scale-up to category leader.</p>
+
+    <div class="stats-grid bg-stats">
+      <div class="stat rv">
+        <div class="num">9</div>
+        <div class="label">years at Nexthink, PM to Senior Director</div>
+      </div>
+      <div class="stat rv">
+        <div class="num">10M<sup>+</sup></div>
+        <div class="label">endpoints running products I launched</div>
+      </div>
+      <div class="stat rv">
+        <div class="num">3<sup>×</sup></div>
+        <div class="label">consecutive years a Gartner MQ Leader</div>
+      </div>
+      <div class="stat rv">
+        <div class="num">1<sup>st</sup></div>
+        <div class="label">SaaS product and first acquisition, both led</div>
+      </div>
+    </div>
+
     <ul class="plain cred">
-      <li>Launched <strong>Application Experience</strong>, Nexthink's first SaaS product — now deployed across more than ten million endpoints</li>
-      <li>Owned the products behind the core <strong>see, diagnose, fix</strong> capability through three consecutive years as a Gartner Magic Quadrant Leader</li>
+      <li>Launched <strong>Application Experience</strong>, Nexthink's first SaaS product</li>
+      <li>Owned the products behind the core <strong>see, diagnose, fix</strong> capability</li>
       <li>Led the company's <strong>first acquisition</strong> from the product side, from due diligence through to full integration</li>
       <li>Ran the <strong>strategic AI portfolio</strong> as the platform became AI-native</li>
     </ul>
