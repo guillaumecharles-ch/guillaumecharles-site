@@ -177,6 +177,12 @@
   /* ---------- credentials ---------- */
   .cred li{margin-bottom:.95rem}
   .bio-foot{font-size:.94rem;color:var(--ink-faint);margin-top:1.9rem;padding-top:1.4rem;border-top:1px solid var(--rule)}
+  .bio-foot-photo{display:flex;align-items:center;gap:1.1rem}
+  .bio-foot-photo p{margin:0}
+  .bio-photo{
+    width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;
+    border:2px solid var(--sand-2);
+  }
 
   /* ---------- contact ---------- */
   .contact-box{
@@ -340,7 +346,10 @@
       <li>Ran the <strong>strategic AI portfolio</strong> as the platform became AI-native</li>
     </ul>
     <p>Which means that when I look at your deployment, I am not reading the documentation. I know why it works the way it does, what it was designed to do, and where the useful edges are.</p>
-    <p class="bio-foot">Engineer by training — MSc Computer Science, Télécom Paris. Based in Lausanne, working with organisations across Europe.</p>
+    <div class="bio-foot bio-foot-photo">
+      <img src="assets/guillaume.jpg" alt="Guillaume Charles" class="bio-photo">
+      <p>Engineer by training — MSc Computer Science, Télécom Paris. Based in Lausanne, working with organisations across Europe.</p>
+    </div>
   </div>
 </section>
 
